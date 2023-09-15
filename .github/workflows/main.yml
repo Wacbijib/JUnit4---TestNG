@@ -7,7 +7,15 @@
 
 name: Java CI with Gradle
 
-on: [push, pull_request]
+on: 
+  pull_request:
+    branches:
+      - '*'
+  push:
+    branches:
+      - 'master'
+      - 'JUnit4'
+      - 'TestNG'
 
 jobs:
   build:
